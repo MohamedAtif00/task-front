@@ -1,0 +1,77 @@
+<div
+  class=""
+  style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  "
+>
+  <div class="" style="border: 3px solid; width: 800px">
+    <h3
+      style="
+        background-color: rgb(100, 200, 255);
+
+        text-align: center;
+        color: white;
+      "
+    >
+      Invoice Detials Page
+    </h3>
+    <div
+      class=""
+      style="
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        padding: 20px;
+      "
+    >
+      <div class="" style="width: 100%">
+        <label for="" style="padding: 10px">Product Name</label>
+        <input type="text" [(ngModel)]="productName" style="width: 80%" />
+      </div>
+
+      <div class="d-flex row" style="width: 100%">
+        <div class="col" style="width: 100%">
+          <label for="" style="padding-right: 10px">Unit No</label>
+          <div ngbDropdown class="d-inline-block" style="width: 80%">
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="dropdownBasic1"
+              style="width: 100%"
+              ngbDropdownToggle
+            >
+              Toggle dropdown
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem *ngFor="let item of units">
+                {{ units.unitNo }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="" style="width: 100%">
+        <label for="" style="padding-right: 10px"> Price</label>
+        <input type="text" style="width: 80%" />
+      </div>
+      <div class="" style="width: 100%">
+        <label for="" style="padding-right: 10px">Quantity</label>
+        <input type="text" style="width: 80%" />
+      </div>
+      <div class="" style="width: 100%">
+        <label for="" style="padding-right: 10px">Total</label>
+        <input type="text" style="width: 80%" />
+      </div>
+      <div class="" style="width: 100%">
+        <label for="" style="padding-right: 10px">Expiry Date</label>
+        <input type="text" style="width: 80%" />
+      </div>
+    </div>
+  </div>
+</div>

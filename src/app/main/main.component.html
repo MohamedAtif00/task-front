@@ -1,0 +1,57 @@
+<div
+  class=""
+  style="
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  "
+>
+  <h2
+    style="
+      font-size: 20px;
+      color: white;
+      background-color: rgb(100, 100, 255);
+      padding: 10px;
+      width: 30%;
+      text-align: center;
+      border-style: solid;
+      border-color: black;
+    "
+  >
+    Home Page
+  </h2>
+
+  <button
+    style="
+      background-color: rgb(100, 200, 255);
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      border-color: black;
+      border-style: groove;
+      width: 20%;
+      box-shadow: inset 20px;
+    "
+    [routerLink]="['details']"
+  >
+    Invoice Details
+  </button>
+  <button
+    style="
+      background-color: rgb(100, 200, 255);
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      border-color: black;
+      border-style: groove;
+      width: 20%;
+    "
+    [routerLink]="['Lists']"
+  >
+    Invoice List
+  </button>
+</div>
